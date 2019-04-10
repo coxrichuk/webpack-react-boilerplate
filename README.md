@@ -1,4 +1,4 @@
-#Webpack minimal boilerplate
+# Webpack minimal boilerplate
 
 ## Getting started
 
