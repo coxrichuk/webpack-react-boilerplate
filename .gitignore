@@ -2,8 +2,9 @@
 .*
 ~*
 
-# ignore node/grunt dependency directories
+# ignore node/yarn/grunt dependency directories
 node_modules/
+yarn.lock
 
 # ignore OS generated files
 ehthumbs.db
@@ -37,3 +38,9 @@ Thumbs.db
 !.gitignore
 !.editorconfig
 !.phpcs.xml.dist
+
+# Ignore built assets
+dist/
+
+.DS_Store
+.git/
