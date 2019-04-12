@@ -71,3 +71,7 @@ This is the Production config environment which extends the Common config
 
 PostCSS is included by default for autoprefixing, but can be used along with many of the other plugins available from the [PostCSS](https://postcss.org/) community
 
+<<<<<<< HEAD
+=======
+`$ npm install`
+>>>>>>> 3ee48e58cae92a82834d69c6f940008018c8f6d3
