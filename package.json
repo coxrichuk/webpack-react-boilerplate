@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",
@@ -38,5 +39,9 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1",
     "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

@@ -1,3 +1,7 @@
+/* Include React core */
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 /* Include assets */
 import webpacksvg from './assets/images/webpack.svg';
 
@@ -17,7 +21,7 @@ let example = new Example();
 console.log('example.exampleFunction - ', example.exampleFunction());
 console.log('example.exampleMethod - ', example.exampleMethod);
 
-example.exampleMethod = 'Webpack boilerplate is awesome';
+example.exampleMethod = 'Webpack react boilerplate is awesome';
 
 console.log('example.exampleFunction (updated) - ', example.exampleMethod);
 
@@ -27,9 +31,13 @@ let exampleTs = new ExampleTypescript();
 console.log('exampleTs.exampleFunction - ', exampleTs.exampleFunction());
 console.log('exampleTs.exampleMethod - ', exampleTs.exampleMethod);
 
-exampleTs.exampleMethod = 'Webpack boilerplate with Typescript is awesome';
+exampleTs.exampleMethod = 'Webpack React boilerplate with Typescript is awesome';
 
 console.log('exampleTs.exampleMethod (updated) - ', exampleTs.exampleMethod);
 
-/* Set the src on the image */
-document.getElementById('webpack-svg').setAttribute('src', webpacksvg);
+const title = 'React Webpack Babel boilerplate';
+
+ReactDOM.render(
+    <div>{title}</div>,
+    document.getElementById('app')
+);

@@ -2,7 +2,7 @@ const path = require('path')
     , HtmlWebpackPlugin = require('html-webpack-plugin')
     , MiniCssExtractPlugin = require('mini-css-extract-plugin')
     , CopyWebpackPlugin = require('copy-webpack-plugin')
-    , CleanWebpackPlugin   = require('clean-webpack-plugin');;
+    , CleanWebpackPlugin   = require('clean-webpack-plugin');
 
 module.exports = {
 
@@ -12,7 +12,7 @@ module.exports = {
     },
 
     // Output (where to write files to)
-    // Implements hasing while generating build to speed things up
+    // Implements hashing while generating build to speed things up
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: '[name].[chunkhash].js'
@@ -52,9 +52,9 @@ module.exports = {
     
         // Clean up the ./dist folder during build(s)
         new CleanWebpackPlugin(),
-
+        
     ],
-
+    
     // Loaders
 
     // Load modules inside module . test
@@ -70,6 +70,7 @@ module.exports = {
                     options: {
                         presets: [
                             '@babel/preset-env',
+                            '@babel/preset-react',
                             '@babel/typescript'
                         ]
                     }
